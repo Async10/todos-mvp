@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="src/app.js"></script>
+    <title>TodosMVP</title>
+</head>
+
+<body class="dark">
+    <button class="mode-toggle" data-presenter="mode-toggle">Test</button>
+    <section class="todoapp">
+        <header class="header">
+            <h1>todos</h1>
+            <form data-presenter="new-todo">
+                <input
+                    id="new-todo"
+                    class="new-todo"
+                    placeholder="What needs to be done?"
+                    autofocus
+                >
+            </form>
+        </header>
+        <section style="display: block;" class="main">
+            <input data-presenter="toggle-all" id="toggle-all" class="toggle-all" type="checkbox">
+            <label for="toggle-all">Mark all as complete</label>
+            <ul data-presenter="todo-list" class="todo-list"></ul>
+            <footer data-presenter="footer" class="footer" style="display: none;">
+                <span data-presenter="todo-count" class="todo-count"></span>
+                <ul data-presenter="filters" class="filters">
+                    <li>
+                        <a href="#/" class="selected">All</a>
+                    </li>
+                    <li>
+                        <a href="#/active" class="">Active</a>
+                    </li>
+                    <li>
+                        <a href="#/completed" class="">Completed</a>
+                    </li>
+                </ul>
+                <button
+                    data-presenter="clear-completed"
+                    class="clear-completed"
+                >
+                    Clear completed
+                </button>
+            </footer>
+            <div data-presenter="toast-container" class="toast-container">
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>
