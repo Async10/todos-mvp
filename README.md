@@ -1,0 +1,3 @@
+# TodosMVP
+
+This project is a clone of the famous [TodoMVC](https://todomvc.com/) todo list application with some added functionality like toasts and a dark/light mode theme toggle. The project shows my approach for developing a modular and maintainable medium to large scale web application using vanilla JavaScript without any additional dependencies or libraries by combining different existing ideas, architectures and patterns like a single state tree, Flux and [MVP](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter). A more detailed explanation is hopefully coming soon. In the meantime check out my version of the [todo list application](https://async10.github.io/todos-mvp/).
