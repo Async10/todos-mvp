@@ -44,12 +44,12 @@
 	color: #b83f45;
 }
 
-.todo-list li .actions button.wastebasket::after {
-	content: '🗑';
+.todo-list li .actions button.delete::after {
+	content: '×';
 }
 
-.todo-list li .actions button.pencil::after {
-	content: '🖉';
+.todo-list li .actions button.editing::after {
+    content: '✎'
 }
 
 .todo-list li:hover .actions {

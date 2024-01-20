@@ -33,8 +33,8 @@ export function renderTodo(filter, todo) {
                 <input id="${todo.id}" class="toggle" type="checkbox" ${checked}>
                 <label for="${todo.id}">${todo.title}</label>
                 <div class="actions">
-                    <button class="pencil"></button>
-                    <button class="wastebasket"></button>
+                    <button class="editing"></button>
+                    <button class="delete"></button>
                 </div>
             </div>
         </li>
