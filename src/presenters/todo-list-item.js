@@ -5,8 +5,8 @@ import { getTodoStyle, renderEditTodo } from "../templates.js";
 
 presenterRegistry.register("todo-list-item", class extends Presenter {
     setup() {
-        this.view.querySelector("button.wastebasket").addEventListener("click", this.#deleteTodo);
-        this.view.querySelector("button.pencil").addEventListener("click", this.#editTodo);
+        this.view.querySelector("button.delete").addEventListener("click", this.#deleteTodo);
+        this.view.querySelector("button.editing").addEventListener("click", this.#editTodo);
         this.view.querySelector('input[type="checkbox"]').addEventListener("input", this.#toggleComplete);
         return store.subscribe(this.#update);
     }
